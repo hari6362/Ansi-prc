@@ -3,9 +3,9 @@
   tasks:
    - name: install nginx in node 01
      package: 
-     name: nginx
-     state: present
+      name: nginx
+      state: present
 
    - name: start servie
-     servie: nginx
-     state: started
+      servie: nginx
+      state: started
