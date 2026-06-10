@@ -11,6 +11,5 @@
       service:
         name: nginx
         state: stoped
-        disable: yes
         
         
