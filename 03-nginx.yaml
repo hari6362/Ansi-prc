@@ -7,5 +7,5 @@
       state: present
 
    - name: start servie
-      servie: nginx
+      service: nginx
       state: started
