@@ -12,3 +12,7 @@
   - name:
     debug:
       msg: "hi, i am learning {{COURSE}}"
+
+  - name:
+    debug:
+      msg: "hi, i am learning {{TRAINER}}"    
