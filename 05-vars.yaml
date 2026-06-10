@@ -1,10 +1,10 @@
 - name: demo variable
   hosts: localhost
   connection: local
-  vars:
-   COURSE: "Ansible"
-   TRAINER: "siva"
-   DURATION: "150HRS"
+  vars_files:
+  - course.yaml
+
   tasks:
-  - debug:
+  - name:
+    debug:
       msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
