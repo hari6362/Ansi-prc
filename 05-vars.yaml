@@ -10,7 +10,7 @@
       msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
 
 
-tasks:
+  tasks:
   - name:
     debug:
       msg: "hi, i am learning {{COURSE}}"
