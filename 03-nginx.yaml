@@ -2,9 +2,10 @@
   hosts: frontend
   tasks:
    - name: install nginx in node 01
-     package: nginx
+     package: 
+     name: nginx
      state: present
 
-     name: start servie
+   - name: start servie
      servie: nginx
      state: started
