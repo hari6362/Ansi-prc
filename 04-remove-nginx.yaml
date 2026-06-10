@@ -10,6 +10,7 @@
     - name: service down
       service:
         name: nginx
-        state: stoped
+        state: stopped
+        disable: yes
         
         
