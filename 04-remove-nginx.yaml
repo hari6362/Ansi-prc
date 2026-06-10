@@ -1,0 +1,16 @@
+- name: remove nginx and disable
+  hosts: frontend
+  become: yes
+  tasks:
+    - name: remove nginx
+      package: 
+        name: nginx
+        state: absent
+
+    - name: service down
+      service:
+        name: nginx
+        state: stoped
+        disable: yes
+        
+        
