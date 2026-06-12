@@ -1,0 +1,6 @@
+- name: debug
+  hosts: frontend
+  become: yes
+  tasks:
+   - name:
+     debug:
