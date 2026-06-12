@@ -1,9 +1,0 @@
-- name: remove nginx
-  hosts: frontend
-  become: yes
-  tasks:
-   - name: remove nginx
-     package:
-      name: nginx
-      state: absent
-  
