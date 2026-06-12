@@ -1,7 +1,7 @@
 - name: debug
   hosts: frontend
   become: yes
-  task: 
+  tasks: 
    - name:
      package: 
       name: top
