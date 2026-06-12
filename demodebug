@@ -5,4 +5,4 @@
    - name:
      package: 
       name: top
-      start: present
+      state: present
