@@ -1,0 +1,8 @@
+- name: debug
+  hosts: frontend
+  become: yes
+  task: 
+   - name:
+     package: 
+      name: top
+      start: present
