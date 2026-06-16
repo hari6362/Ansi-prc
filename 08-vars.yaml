@@ -1,0 +1,6 @@
+- name: print group_vars
+  hosts: frontend
+  tasks:
+   - name: prin information
+     debug:
+      msg: "hi, my {{COURSE}}"
