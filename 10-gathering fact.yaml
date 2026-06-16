@@ -1,0 +1,8 @@
+- name:
+  hosts: frontend
+  tasks:
+   - name:
+      debug:
+      msg: "{{ "ansible_facts}}"
+
+
