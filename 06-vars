@@ -14,6 +14,8 @@
       msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
 
   - name:
+    vars:
+      COURSE: "ANSIBLE-2"
     debug:
       msg: "hi, i am learning {{COURSE}}"
 
