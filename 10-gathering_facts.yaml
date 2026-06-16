@@ -1,7 +1,7 @@
-- name:
+- name: print facts
   hosts: frontend
   tasks:
-   - name:
+  - name:
       debug:
       msg: "{{ "ansible_facts }}"
 
