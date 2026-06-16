@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name:
-      debug:
+    debug:
       msg: "{{ ansible_facts }}"
 
 
