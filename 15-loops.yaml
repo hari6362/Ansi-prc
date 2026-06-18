@@ -12,10 +12,10 @@
 
 
 
-- name:
+- name: demo loops
   hosts: frontend
   become: yes
-    tasks:
+  tasks:
     - name: print name
       debug:
         msg: "hi {{ item }}"
