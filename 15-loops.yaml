@@ -13,9 +13,9 @@
 
 
 - name:
-  hosts: local
-  connection: local
-  tasks:
+  hosts: frontend
+  become: yes
+    tasks:
     - name: print name
       debug:
         msg: "hi {{ item }}"
