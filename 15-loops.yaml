@@ -24,3 +24,18 @@
       - harish
       - Ramesh
       - ram 
+
+
+- name: install packages
+  hosts: frontend
+  become: yes        # run as sudo
+  tasks:
+  - name: install packages
+    package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - nginx
+    - mysql
+    - mongodb-mongosh
+    - git
