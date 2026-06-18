@@ -9,4 +9,4 @@
   - name: print if Debian
     debug:
       msg: "OS family is Redhat, package manager is apt-get"
-    when: ansible_facts.os_family == "Debian"    
+    when: ansible_facts.os_family == "Debian"
