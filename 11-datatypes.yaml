@@ -17,7 +17,7 @@
   - name: print information
     debug:
       msg: |
-        name: {{ coures }}
+        name: {{ course }}
         duration: {{ duration_in_hrs }}
         is_live: {{ is_live_classes }}
         topics: {{ topics }}
