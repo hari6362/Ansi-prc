@@ -16,7 +16,7 @@
   hosts: local
   connection: local
   tasks:
-    - name: demo loop
+    - name: print name
       debug:
         msg: "hi {{ item }}"
 
