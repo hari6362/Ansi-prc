@@ -12,9 +12,9 @@
 
 
 
-- name: demo loops
-  hosts: frontend
-  become: yes
+- name: demo on loops
+  hosts: local
+  connection: local
   tasks:
     - name: print name
       debug:
