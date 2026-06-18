@@ -1,6 +1,5 @@
 - name:
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: print if redhat
     debug:
