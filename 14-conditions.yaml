@@ -1,0 +1,13 @@
+- name:
+  hosts: local
+  connection: local
+  tasks:
+  - name print if redhat
+    debug:
+      msg: "OS family is Redhat, package manager is dnf"
+    when: ansible.facts.os_family == "Redhat"
+
+  - name print if Debian
+    debug:
+      msg: "OS family is Redhat, package manager is apt-get"
+    when: ansible.facts.os_family == "Debian"    
