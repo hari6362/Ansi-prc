@@ -14,6 +14,7 @@
     debug:
       msg: "give number: {{ given_number }} is odd" 
     when: given_number % 2 != 0
+    
 #  - name:
 #    hosts: local
 #    connection: local
