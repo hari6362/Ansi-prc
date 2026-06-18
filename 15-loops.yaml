@@ -1,11 +1,26 @@
-- name: demo loops
+# - name: demo loops
+#   hosts: local
+#   connection: local
+#   tasks:
+#   - name: greet everyone
+#     debug:
+#       msg: "Hi {{ item }}" # item is reserved special variable
+#     loop:
+#     - Ramesh
+#     - Raheem
+#     - John
+
+
+
+- name:
   hosts: local
   connection: local
   tasks:
-  - name: greet everyone
-    debug:
-      msg: "Hi {{ item }}"
-    loop:
-    - Ramesh
-    - Raheem
-    - John
+    - name: demo loop
+      debug:
+        msg: "hi {{ item }}"
+
+      loop:
+      - harish
+      - Ramesh
+      - ram 
