@@ -1,0 +1,25 @@
+- name:
+  hosts: local
+  connection: local
+  vars: 
+    course: "Devops with ai" # string
+    duration_in_hrs: 150 # int/number
+    is_live_classes: true # bool
+    topics:
+    - linux
+    - shell
+    - ansible 
+    more_details:
+      months: 5
+      trainer: shiva
+  
+  tasks:
+  - name: print information
+    debug:
+      msg: |
+        name: {{ coures }}
+        duration: {{ duration_in_hrs }}
+        is_live: {{ is_live_classes }}
+        topics: {{ topics }}
+        more_details: {{ more_details }}
+
