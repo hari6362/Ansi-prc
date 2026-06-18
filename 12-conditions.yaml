@@ -1,5 +1,5 @@
 - name:
-  hosts:
+  hosts: local
   connection: local
   vars: 
     live_sessions: 6
