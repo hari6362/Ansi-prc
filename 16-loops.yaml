@@ -1,12 +1,26 @@
+# - name: install packages
+#   hosts: frontend
+#   become: yes
+#   tasks:
+#     - name: install packages
+#       package:
+#         name: "{{ item }}"
+#         state: present
+#       loop:
+#        - nginx
+#        - mysql
+#        - git 
+
+
 - name: install packages
   hosts: frontend
   become: yes
   tasks:
     - name: install packages
       package:
-        name: "{{ item }}"
-        state: present
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
       loop:
-       - nginx
-       - mysql
-       - git 
+       - { name: nginx, state: absent }
+       - { name: sql, state: absent }
+       - { name: zip, state: present } 
