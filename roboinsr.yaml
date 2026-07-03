@@ -13,7 +13,6 @@
       image_id: "{{ image_id }}"
       region: us-east-1
       security_groups:
-      - "roboshop-{{ item }}"
       - my-comman
     loop: "{{ instances }}"
     register: ec2_output
