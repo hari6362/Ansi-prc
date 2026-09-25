@@ -3,3 +3,10 @@
   tasks:
    - name: ping server
      ping:
+
+
+- name : ping server
+  hosts: frontend
+  tasks: 
+   - name: ping server
+     ping:  
