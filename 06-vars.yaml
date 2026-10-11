@@ -22,7 +22,7 @@
 #   - name:
 #     debug:
 #       msg: "hi, i am learning {{TRAINER}}"    
-- name: task level variable2
+- name: level variable2
   hosts: localhost
   connection: local
   vars:
