@@ -1,14 +1,22 @@
-- name: install nginx
+# - name: install nginx
+#   hosts: frontend
+#   become: yes
+#   tasks:
+#    - name: install nginx in node 01
+#      package: 
+#       name: nginx
+#       state: present
+
+#    - name: start servie
+#      service: 
+#        name: nginx
+#        state: started
+#        enabled: yes
+
+- name: install nginx server
   hosts: frontend
-  become: yes
   tasks:
-   - name: install nginx in node 01
-     package: 
+  - name: install nginx
+    package:
       name: nginx
       state: present
-
-   - name: start servie
-     service: 
-       name: nginx
-       state: started
-       enabled: yes
