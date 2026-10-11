@@ -1,4 +1,4 @@
-- name: demo variable
+- name: demo task level variable
   hosts: localhost
   connection: local
   vars:
