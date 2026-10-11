@@ -25,6 +25,6 @@
     COURSE: "ansible"
     DURATION: "150 hrs"
   tasks:
-    debug:
+  - debug:
       msg: " hi, am {{ NAME }}, am practising {{ COURSE }} duration is {{ DURATION }}"
 
