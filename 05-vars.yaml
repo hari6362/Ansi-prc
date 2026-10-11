@@ -1,18 +1,30 @@
-- name: demo variable
+# - name: demo variable
+#   hosts: localhost
+#   connection: local  # it will not ask for username and password
+#   vars_files:
+#   - course.yaml
+
+#   tasks:
+#   - name:
+#     debug:
+#       msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
+
+#   - name:
+#     debug:
+#       msg: "hi, i am learning {{COURSE}}"
+
+#   - name:
+#     debug:
+#       msg: "hi, i am learning {{TRAINER}}"    
+
+- name: demo variables01
   hosts: localhost
   connection: local
-  vars_files:
-  - course.yaml
-
+  vars:
+    NAME: "Harish"
+    COURSE: "ansible"
+    DURATION: "150 hrs"
   tasks:
-  - name:
     debug:
-      msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
+      msg: " hi, am {{ NAME }}, am practising {{ COURSE }} duration is {{ DURATION }}"
 
-  - name:
-    debug:
-      msg: "hi, i am learning {{COURSE}}"
-
-  - name:
-    debug:
-      msg: "hi, i am learning {{TRAINER}}"    
