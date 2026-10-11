@@ -34,12 +34,11 @@
   - name: print task variable
     debug:
       msg: hi this is my {{ NAME }}
-
     vars:
       NAME: harish
 
   tasks:
-  - name: print task variable-1
+  - name: print task variable
     debug:
       msg: hi duration is {{ DURATION }}
     vars:
