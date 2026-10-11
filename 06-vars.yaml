@@ -37,7 +37,6 @@
     vars:
       NAME: harish
 
-  tasks:
   - name: print task variable
     debug:
       msg: hi duration is {{ DURATION }}
