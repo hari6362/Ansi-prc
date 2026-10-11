@@ -23,7 +23,7 @@
       state: present
 
 - name: start the service
-  hosts:
+  hosts: frontend
   become: yes
   tasks:
   - name: start service
