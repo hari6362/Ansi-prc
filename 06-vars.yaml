@@ -36,7 +36,7 @@
       msg: hi this is my {{ NAME }}
 
     vars:
-      NAME: harish-task 
+      NAME: harish
 
   tasks:
   - name: print task variable-1
