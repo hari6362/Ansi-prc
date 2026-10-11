@@ -42,3 +42,5 @@
   - name: print task variable-1
     debug:
       msg: hi duration is {{ DURATION }}
+    vars:
+      DURATION: 60HRS
