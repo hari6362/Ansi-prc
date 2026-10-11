@@ -1,21 +1,21 @@
-# - name: install nginx 
-#   hosts: frontend
-#   tasks:                  # tasks, module , collection are same
-#    - name: install nginx
-#      package: 
-#       name: nginx
-#       state: present
-
-#   - name: start service
-#      service:
-#       name: nginx
-#       state: started
-#       enabled: yes
-
-
-
-- name: ping server
+- name: install nginx 
   hosts: frontend
-  tasks: 
-  - name: ping 
-    ping:
+  tasks:                  # tasks, module , collection are same
+   - name: install nginx
+     package: 
+      name: nginx
+      state: present
+
+   - name: start service
+     service:
+      name: nginx
+      state: started
+      enabled: yes
+
+
+
+# - name: ping server
+#   hosts: frontend
+#   tasks: 
+#   - name: ping 
+#     ping:
