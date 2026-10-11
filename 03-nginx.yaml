@@ -22,12 +22,8 @@
       name: nginx
       state: present
 
-- name: start the service
-  hosts: frontend
-  become: yes
-  tasks:
   - name: start service
     service:
-     name: nginx 
-     state: started
-     enabled: yes
+      name: nginx 
+      state: started
+      enabled: yes
