@@ -27,7 +27,7 @@
   connection: local
   vars:
     COURSE: ansible
-    TRAINER: harish
+    NAME: harish-play
     DURATION: 150HRS
 
   tasks:
@@ -36,4 +36,4 @@
       msg: " hi this is my {{ NAME }} "
 
     vars:
-      NAME: harish  
+      NAME: harish-task 
