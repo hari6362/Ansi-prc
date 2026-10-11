@@ -31,9 +31,9 @@
     DURATION: 150HRS
 
   tasks:
-      vars:
-      NAME: Harish
-    - name: print task variable
-      debug:
-        msg: " hi this is my {{ NAME }} "
-      
+  - name: print task variable
+    debug:
+      msg: " hi this is my {{ NAME }} "
+
+    vars:
+      NAME: harish  
