@@ -33,7 +33,7 @@
   tasks:
   - name: print task variable
     debug:
-      msg: " hi this is my {{ NAME }} "
+      msg: hi this is my {{ NAME }}
 
     vars:
       NAME: harish-task 
