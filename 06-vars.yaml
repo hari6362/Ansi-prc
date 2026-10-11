@@ -35,5 +35,5 @@
     debug:
       msg: hi this is my {{ NAME }}
 
-    vars:
-      NAME: harish-task 
+    # vars:
+    #   NAME: harish-task 
