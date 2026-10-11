@@ -11,4 +11,4 @@
   tasks:
   - name: prin default msg
     debug:
-      msg: my name is harish
+      harish
