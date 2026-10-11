@@ -10,4 +10,4 @@
   hosts: frontend
   tasks:
   - name: prin default msg
-    debug: 
+    debug: my name is harish
