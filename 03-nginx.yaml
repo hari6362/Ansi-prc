@@ -28,5 +28,6 @@
   tasks:
   - name: start service
     service:
-     name: starting 
+     name: nginx 
      state: started
+     enabled: yes
