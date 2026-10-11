@@ -1,24 +1,39 @@
-- name: demo task level variable
+# - name: demo task level variable
+#   hosts: localhost
+#   connection: local
+#   vars:
+#     COURSE: "Ansible"
+#     TRAINER: "Harish"
+#     DURATION: "150HRS"
+
+#   tasks:
+#   - name:
+#     vars:
+#       COURSE: "ANSIBLE-2"
+#     debug:
+#       msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
+
+#   - name:
+#     vars:
+#       COURSE: "ANSIBLE-2"
+#     debug:
+#       msg: "hi, i am learning {{COURSE}}"
+
+#   - name:
+#     debug:
+#       msg: "hi, i am learning {{TRAINER}}"    
+- name: task level variable2
   hosts: localhost
   connection: local
   vars:
-    COURSE: "Ansible"
-    TRAINER: "Harish"
-    DURATION: "150HRS"
+    COURSE: ansible
+    TRAINER: harish
+    DURATION: 150HRS
 
   tasks:
-  - name:
-    vars:
-      COURSE: "ANSIBLE-2"
-    debug:
-      msg: "hi, i am learning {{COURSE}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
-
-  - name:
-    vars:
-      COURSE: "ANSIBLE-2"
-    debug:
-      msg: "hi, i am learning {{COURSE}}"
-
-  - name:
-    debug:
-      msg: "hi, i am learning {{TRAINER}}"    
+     vars:
+      name: Harish
+   - name: print task variable
+     debug:
+      msg: " hi this is my {{ name }} "
+      
