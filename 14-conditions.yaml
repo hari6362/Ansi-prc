@@ -3,12 +3,12 @@
   tasks:
   - name: print if redhat
     debug:
-      msg: "OS family is Redhat, package manager is dnf" # H should me caps
+      msg: "OS family is RedHat, package manager is dnf" # H should me caps
     when: ansible_facts.os_family == "Redhat"  # same issue
 
   - name: print if Debian
     debug:
-      msg: "OS family is Redhat, package manager is apt-get"
+      msg: "OS family is Debain, package manager is apt-get"
     when: ansible_facts.os_family == "Debian"
 
 
