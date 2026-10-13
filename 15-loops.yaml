@@ -29,7 +29,7 @@
 
 - name: print loop
   hosts: local
-  conditions: local
+  connection: local
   tasks:
   - name: print names
     debug:
