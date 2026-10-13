@@ -33,9 +33,9 @@
   task:
   - name: print names
     debug:
-      msg: "hi {{ item }}
+      msg: "hi {{ item }}"
 
     loop:
-    - Ramesh
-    - Ram
-    - Harish
+     - Ramesh
+     - Ram
+     - Harish
