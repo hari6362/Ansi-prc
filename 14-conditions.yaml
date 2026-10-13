@@ -1,14 +1,14 @@
-- name: conditions using ansible_harish
+- name: conditions using ansible_facts
   hosts: frontend
   tasks:
   - name: print if redhat
     debug:
       msg: "OS family is RedHat, package manager is dnf" # H should me caps
-    when: ansible_harish.os_family == "RedHat"  # same issue
+    when: ansible_facts.os_family == "RedHat"  # same issue
 
   - name: print if Debian
     debug:
       msg: "OS family is Debain, package manager is apt-get"
-    when: ansible_harish.os_family == "Debian"
+    when: ansible_facts.os_family == "Debian"
 
 
