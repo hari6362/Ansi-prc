@@ -12,30 +12,30 @@
 
 
 
-- name: demo on loops
+# - name: install packages
+#   hosts: frontend
+#   become: yes        # run as sudo
+#   tasks:
+#   - name: install packages
+#     package:
+#       name: "{{ item }}"
+#       state: present
+#     loop:
+#     - nginx
+#     - mysql
+#     - mongodb-mongosh
+#     - git
+
+
+- name: print loop
   hosts: local
-  connection: local
-  tasks:
-    - name: print name
-      debug:
-        msg: "hi {{ item }}"
+  conditions: local
+  task:
+  - name: print names
+    debug:
+      msg: "hi {{ item }}
 
-      loop:
-      - harish
-      - Ramesh
-      - ram 
-
-
-- name: install packages
-  hosts: frontend
-  become: yes        # run as sudo
-  tasks:
-  - name: install packages
-    package:
-      name: "{{ item }}"
-      state: present
     loop:
-    - nginx
-    - mysql
-    - mongodb-mongosh
-    - git
+     - Ramesh
+     - Ram
+     - Harish
