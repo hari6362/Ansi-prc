@@ -23,4 +23,5 @@
       loop:
        - { name: nginx, state: absent }
        - { name: sql, state: absent }
-       - { name: zip, state: present } 
+       - { name: git, state: absent }
+       - { name: git, state: present }
