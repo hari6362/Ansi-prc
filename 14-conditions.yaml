@@ -4,7 +4,7 @@
   - name: print if redhat
     debug:
       msg: "OS family is RedHat, package manager is dnf" # H should me caps
-    when: ansible_facts.os_family == "Redhat"  # same issue
+    when: ansible_facts.os_family == "RedHat"  # same issue
 
   - name: print if Debian
     debug:
