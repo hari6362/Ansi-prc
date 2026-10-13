@@ -27,15 +27,29 @@
 #     - git
 
 
-- name: print loop
-  hosts: local
-  connection: local
-  tasks:
-  - name: print names
-    debug:
-      msg: "hi {{ item }}"
+# - name: print loop
+#   hosts: local
+#   connection: local
+#   tasks:
+#   - name: print names
+#     debug:
+#       msg: "hi {{ item }}"
 
+#     loop:
+#      - Ramesh
+#      - Ram
+#      - Harish
+
+
+- name: install packages
+  hosts: frontend
+  become: yes        # run as sudo
+  tasks:
+  - name: install packages
+    package:
+      name: "{{ item }}"
+      state: present
     loop:
-     - Ramesh
-     - Ram
-     - Harish
+    - nginx
+    - mysql
+    - git
