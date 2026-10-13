@@ -36,6 +36,6 @@
       msg: "hi {{ item }}
 
     loop:
-     - Ramesh
-     - Ram
-     - Harish
+    - Ramesh
+    - Ram
+    - Harish
