@@ -30,7 +30,7 @@
 - name: print loop
   hosts: local
   conditions: local
-  task:
+  tasks:
   - name: print names
     debug:
       msg: "hi {{ item }}"
