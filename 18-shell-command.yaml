@@ -14,3 +14,8 @@
   - name: list files
     #command: ls -ltr > /tmp/files.txt
     shell: ls -ltr > /tmp/files.txt
+    register: tmp_output
+
+  - name: tmp-output
+    debug:
+      msg: "{{ tmp_output }}"  
