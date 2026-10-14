@@ -13,5 +13,5 @@
       msg: "{{ user_output }}"
 
   - name: create user
-    command: useradd roboshop
-    when: user_output.rc != 0
+    command: userdel roboshop
+    when: user_output.rc == 0
