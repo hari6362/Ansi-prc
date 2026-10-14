@@ -11,6 +11,6 @@
     debug:
       msg: "{{ users_output }}"
 
-  # - name: list files
-  #   #command: ls -ltr > /tmp/files.txt
-  #   shell: ls -ltr > /tmp/files.txt
+  - name: list files
+    #command: ls -ltr > /tmp/files.txt
+    shell: ls -ltr > /tmp/files.txt
